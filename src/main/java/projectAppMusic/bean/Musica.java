@@ -5,6 +5,9 @@ public class Musica {
     private Autor  autor;
     private Composicao composicao;
 
+    public Musica() {
+    }
+
     public Musica(Long id_musica, Autor autor, Composicao composicao) {
         this.id_musica = id_musica;
         this.autor = autor;

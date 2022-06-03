@@ -2,15 +2,15 @@ projectAppMusic\controller\ControllerMusica.class
 projectAppMusic\controller\ControllerAutor.class
 projectAppMusic\controller\ControllerUsuario.class
 projectAppMusic\controller\ControllerPessoa.class
-projectAppMusic\dao\DaoUsuario.class
 projectAppMusic\view\ManterMusica.class
+projectAppMusic\dao\DaoUsuario.class
 AppMusica\util\Conexao.class
 projectAppMusic\view\ManterUsuario.class
 projectAppMusic\bean\Usuario.class
 projectAppMusic\dao\DaoAutor.class
 projectAppMusic\projectAppMusic.class
-projectAppMusic\dao\DaoComposicao.class
 projectAppMusic\dao\DaoMusica.class
+projectAppMusic\dao\DaoComposicao.class
 projectAppMusic\controller\ControllerComposicao.class
 projectAppMusic\view\ManterAutor.class
 projectAppMusic\bean\Pessoa.class

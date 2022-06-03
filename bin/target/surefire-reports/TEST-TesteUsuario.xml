@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="TesteUsuario" time="0.926" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="TesteUsuario" time="1.029" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\FATEC 4 BIMESTRE\Dispositivos moveis\ProjectAppMusic"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\User\Documents\Documentos Alex Geral\FATEC 4 BIMESTRE\Dispositivos moveis\ProjectAppMusic"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="test" value="TesteUsuario#executarTeste"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\FATEC 4 BIMESTRE\Dispositivos moveis\ProjectAppMusic"/>
+    <property name="user.dir" value="C:\Users\User\Documents\Documentos Alex Geral\FATEC 4 BIMESTRE\Dispositivos moveis\ProjectAppMusic"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="17.0.2+8-LTS-86"/>
     <property name="os.arch" value="amd64"/>
@@ -61,5 +61,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="TesteUsuario" name="executarTeste" time="0.926"/>
+  <testcase classname="TesteUsuario" name="executarTeste" time="1.029"/>
 </testsuite>

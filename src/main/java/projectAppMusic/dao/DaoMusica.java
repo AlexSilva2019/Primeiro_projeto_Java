@@ -14,6 +14,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import projectAppMusic.bean.Autor;
+import projectAppMusic.bean.Composicao;
 import projectAppMusic.bean.Musica;
 /**
  *
@@ -164,9 +165,13 @@ public class DaoMusica {
 
                 Musica retorno = null;
                 if (rs.next()) {
-
-                   retorno = new Musica(rs.getLong("id_musica"));
-                   
+                    Autor aut = new Autor(rs.getLong("Autor_idAutor"));
+                    Composicao composicao = new Composicao(rs.getLong("composicao_codigo_composicao"));
+                        // criando o objeto Usuario
+                        retorno = new Musica(
+                                rs.getLong("id_musica"),
+                                aut,      
+                                composicao);
                 }
                 rs.close();
                 conexaoDB.desconectar();
@@ -190,7 +195,7 @@ public class DaoMusica {
         }
     }
      
-     public List<Musica> listar(Musica mscEnt) throws SQLException {
+     public List<Musica> listar(String mscEnt) throws SQLException {
         // usus: array armazena a lista de registros
         if (conexaoDB.conectar()) {
 
@@ -205,14 +210,19 @@ public class DaoMusica {
 
                 PreparedStatement stmt = connection.prepareStatement(sql);
                 // seta os valores
-                stmt.setString(1, "%" + mscEnt.getId_musica() + "%");
+                stmt.setString(1, "%" + mscEnt + "%");
 
                 ResultSet rs = stmt.executeQuery();
 
                 while (rs.next()) {
+                    
+                    Autor aut = new Autor(rs.getLong("Autor_idAutor"));
+                    Composicao composicao = new Composicao(rs.getLong("composicao_codigo_composicao"));
                     // criando o objeto Usuario
                     Musica msc = new Musica(
-                            rs.getLong("id_musica"));
+                            rs.getLong("id_musica"),
+                            aut,      
+                            composicao);
 
                     // adiciona o usu à lista de usus
                     msca.add(msc);

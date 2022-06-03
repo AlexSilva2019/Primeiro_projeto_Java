@@ -47,15 +47,15 @@ public class ManterMusica {
     
     public static void listar() throws SQLException, ClassNotFoundException {
         
-            Long id = Long.parseLong((JOptionPane.showInputDialog("ID da Musica")));
+            String id = JOptionPane.showInputDialog("ID da Musica");
             
-            Musica mscEntrada = new Musica(id);
+            Musica mscEntrada = new Musica();
 
             ControllerMusica ca  = new ControllerMusica();
             
             List<Musica> listMusicas = new ArrayList<>();
             
-            listMusicas  = ca.listar(mscEntrada);
+            listMusicas  = ca.listar(id);
             
             if (listMusicas != null || ! listMusicas.isEmpty()) {
                 for(Musica a : listMusicas){

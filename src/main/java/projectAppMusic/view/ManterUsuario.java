@@ -65,7 +65,7 @@ public class ManterUsuario {
     }
 
     public static void buscar () throws SQLException, ClassNotFoundException {
-        Long idUsu = Long.parseLong(JOptionPane.showInputDialog("id Usuario"));
+        Long idUsu = Long.parseLong(JOptionPane.showInputDialog("id Usuario"));//request.getParameter("")
         Usuario usuEntrada = new Usuario(idUsu);
         ControllerUsuario contUsu = new ControllerUsuario();
         Usuario usuSaida = contUsu.buscar(usuEntrada);

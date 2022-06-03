@@ -22,7 +22,7 @@ public class ControllerMusica {
         return daoMsc.inserir(m);
     }
 
-    public List<Musica> listar(Musica m) throws SQLException, ClassNotFoundException {
+    public List<Musica> listar(String m) throws SQLException, ClassNotFoundException {
         daoMsc = new DaoMusica();
         return daoMsc.listar(m);
     }
